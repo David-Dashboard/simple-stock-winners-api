@@ -1,17 +1,20 @@
-Assumptions:
-- Database (.csv) has the columns `Date`, `Kod`, and `Kurs`.
+Setup:
+- pip install fastapi[standard]``
+- pip install -r requirements.txt
 
-Simplicity:
-- `pandas` for CSV data operations
-- `fastapi` for lightweight REST API
-- `pytest` for test-driven development
-
-Instructions:
+Quick test:
 - `fastapi dev main.py`
+- Open browser and visit http://127.0.0.1:8000 to verify server is working.
+- Visit http://127.0.0.1:8000/get_stock_winners.
 
-About `requirements.txt`:
-- Generated using `pipreqs`
+About this repository:
+- `requirements.txt` was generated using `pipreqs`
+- The CSV database (see the sample in the sample_data folder) is assumed to have the columns `Date`, `Kod`, and `Kurs`.
+- Python Modules used are
+	- `pandas` for CSV data operations
+	- `fastapi` for lightweight REST API
+	- `pytest` for test-driven development
 
-TODO (2025-03-15):
+TODO (2025-04-02):
 - Write tests using pytest
-- Figure out a good directory structure for the project (where to put sample data, tests and source code) 
+- Decide how to deploy application
