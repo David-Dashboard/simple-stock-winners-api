@@ -1,6 +1,6 @@
 Setup:
-- pip install fastapi[standard]``
-- pip install -r requirements.txt
+- `pip install -r requirements.txt`
+- `pip install fastapi[standard]`
 
 Quick test:
 - `fastapi dev main.py`
